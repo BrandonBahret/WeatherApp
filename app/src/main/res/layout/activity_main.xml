@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTextSecondary"
+        android:orientation="vertical"
+        tools:context="com.example.brandon.weatherapp.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/str_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:text="n/a"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/str_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="false"
+                android:paddingTop="8dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="90sp"/>
+
+            <TextView
+                android:id="@+id/str_description"
+                android:layout_width="175dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="n/a"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/str_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingTop="16dp"
+                android:text="0.0°F"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="90dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/str_low_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0°F"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/str_icn_low_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text=""
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="30sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTextPrimary"/>
+
+
+                <TextView
+                    android:id="@+id/str_high_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="0°F"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/str_icn_high_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/str_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Humidity 0%"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/str_cloudiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloudiness 0%"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:id="@+id/str_wind_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind Speed 0.0mph"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>
